@@ -235,6 +235,55 @@ footer{
   .trust{grid-template-columns:1fr}
   .sticky-signup{grid-template-columns:1fr;padding:20px}
 }
+  .materials-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.materials-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+}
+
+.material-box{
+  background:#000;
+  color:#fff;
+  padding:40px 25px;
+  transition:0.3s;
+  border-right:1px solid rgba(255,255,255,0.08);
+}
+
+.material-box:hover{
+  background:#111;
+}
+
+.material-box h3{
+  margin:0 0 10px;
+  font-size:22px;
+  letter-spacing:1px;
+}
+
+.short{
+  font-family:Arial,sans-serif;
+  opacity:0.85;
+  margin-bottom:20px;
+}
+
+.read-more{
+  background:#fff;
+  color:#000;
+  border:none;
+  padding:10px 16px;
+  cursor:pointer;
+  font-family:Arial,sans-serif;
+}
+
+.more{
+  display:none;
+  margin-top:20px;
+  font-family:Arial,sans-serif;
+  line-height:1.6;
+}
 </style>
 </head>
 
@@ -386,115 +435,72 @@ footer{
 </section>
 
 <section id="materials">
-  <h2 style="text-align:center;">Built on better materials</h2>
+  <h2 class="materials-title">Built on better materials</h2>
 
-  <p style="text-align:center; max-width:700px; margin:20px auto;">
-    At AMAL, we don’t believe in having more clothing.  
-    We believe in having the right piece — used the right way.  
-    Same design. Different materials. Different experience.
-  </p>
+  <div class="materials-grid">
 
-  <div class="material-grid">
-
-    <!-- BAMBOO -->
-    <div class="material-card">
+    <div class="material-box">
       <h3>Bamboo</h3>
-      <p class="subtitle">Everyday comfort</p>
-
-      <p>Soft, breathable and made to sit close to the body.</p>
-
-      <details>
-        <summary>Read more</summary>
-        <p>
-          Bamboo is designed for maximum comfort. It feels light on the skin and adapts naturally to movement.
-        </p>
-        <p>
-          <strong>Best use:</strong><br>
-          True to size for a closer fit<br>
-          Perfect as a base layer or for warm days
-        </p>
-      </details>
+      <p class="short">Soft, breathable and made for everyday comfort.</p>
+      <button class="read-more">Read more</button>
+      <div class="more">
+        <p>Designed to sit close to the body with a smooth and lightweight feel.</p>
+        <p><strong>Best use:</strong><br>
+        True to size for a closer fit<br>
+        Ideal as a base layer or warm days</p>
+      </div>
     </div>
 
-    <!-- COTTON -->
-    <div class="material-card">
+    <div class="material-box">
       <h3>Cotton</h3>
-      <p class="subtitle">Clean & reliable</p>
-
-      <p>Balanced, breathable and made for everyday wear.</p>
-
-      <details>
-        <summary>Read more</summary>
-        <p>
-          Cotton offers a clean and natural feel that works in any setting.
-        </p>
-        <p>
-          <strong>Best use:</strong><br>
-          True to size for a classic fit<br>
-          Size up for a more relaxed look
-        </p>
-      </details>
+      <p class="short">Balanced, clean and reliable for daily wear.</p>
+      <button class="read-more">Read more</button>
+      <div class="more">
+        <p>A natural fabric that works in any setting with a clean finish.</p>
+        <p><strong>Best use:</strong><br>
+        True to size for a classic fit<br>
+        Size up for a relaxed look</p>
+      </div>
     </div>
 
-    <!-- WOOL -->
-    <div class="material-card">
+    <div class="material-box">
       <h3>Wool</h3>
-      <p class="subtitle">Temperature control</p>
-
-      <p>Adapts to your body and regulates heat naturally.</p>
-
-      <details>
-        <summary>Read more</summary>
-        <p>
-          Wool keeps you warm when it’s cold and breathable when it’s not.
-        </p>
-        <p>
-          <strong>Best use:</strong><br>
-          True to size for base layer use<br>
-          Size up for a relaxed outer layer
-        </p>
-      </details>
+      <p class="short">Temperature control for all conditions.</p>
+      <button class="read-more">Read more</button>
+      <div class="more">
+        <p>Adapts to your body and regulates temperature naturally.</p>
+        <p><strong>Best use:</strong><br>
+        True to size as base layer<br>
+        Size up for layering</p>
+      </div>
     </div>
 
-    <!-- HEMP -->
-    <div class="material-card">
+    <div class="material-box">
       <h3>Hemp</h3>
-      <p class="subtitle">Structure & durability</p>
-
-      <p>Strong, breathable and built to last.</p>
-
-      <details>
-        <summary>Read more</summary>
-        <p>
-          Hemp has a firmer feel and gives the garment more structure.
-        </p>
-        <p>
-          <strong>Best use:</strong><br>
-          Size up for a relaxed fit<br>
-          Ideal as an overshirt or outer piece
-        </p>
-      </details>
+      <p class="short">Structured, durable and made to last.</p>
+      <button class="read-more">Read more</button>
+      <div class="more">
+        <p>A stronger fabric with more structure and long-term durability.</p>
+        <p><strong>Best use:</strong><br>
+        Size up for relaxed fit<br>
+        Ideal as outer layer</p>
+      </div>
     </div>
 
-    <!-- SILK -->
-    <div class="material-card">
+    <div class="material-box">
       <h3>Silk</h3>
-      <p class="subtitle">Elevated comfort</p>
-
-      <p>Lightweight, smooth and naturally refined.</p>
-
-      <details>
-        <summary>Read more</summary>
-        <p>
-          Silk offers a softer, more luxurious feel while staying breathable.
-        </p>
-        <p>
-          <strong>Best use:</strong><br>
-          True to size for a clean fit<br>
-          Can also be worn slightly relaxed
-        </p>
-      </details>
+      <p class="short">Lightweight, smooth and refined.</p>
+      <button class="read-more">Read more</button>
+      <div class="more">
+        <p>Offers a softer, more elevated feel with natural comfort.</p>
+        <p><strong>Best use:</strong><br>
+        True to size for clean fit<br>
+        Can be worn relaxed</p>
+      </div>
     </div>
+
+  </div>
+</section>
 
   </div>
 </section>
@@ -558,7 +564,15 @@ document.querySelectorAll('.colors').forEach(group => {
   });
 });
 </script>
-
+<script>
+document.querySelectorAll('.read-more').forEach(btn=>{
+  btn.onclick=()=>{
+    const more = btn.nextElementSibling;
+    more.style.display = more.style.display === 'block' ? 'none' : 'block';
+    btn.innerText = more.style.display === 'block' ? 'Close' : 'Read more';
+  }
+})
+</script>
 </body>
 </html>
 ```
