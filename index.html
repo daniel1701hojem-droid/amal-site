@@ -556,7 +556,7 @@ footer{
     <input type="email" placeholder="Your email address">
     <button type="submit">Notify me</button>
   </form>
-  <div class="close">×</div>
+ <div class="close" onclick="closeSignup()">×</div>
 </div>
 
 <script>
@@ -568,8 +568,11 @@ document.querySelectorAll('.colors').forEach(group => {
     });
   });
 });
+  <script>
+function closeSignup() {
+  document.querySelector('.sticky-signup').style.display = 'none';
+}
 </script>
-<script>
 document.querySelectorAll('.read-more').forEach(btn=>{
   btn.onclick=()=>{
     const more = btn.nextElementSibling;
